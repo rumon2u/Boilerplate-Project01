@@ -1,6 +1,5 @@
 @import "partials/variables";
 @import "partials/layout";
-@import "breakpoint";
 @import "grids";
 
 header {
@@ -100,10 +99,6 @@ header {
   // Start at the last 2 column point
   h1 {
     @include span(last 2);
-
-    @include breakpoint((max-width 50em)){
-      @include span(last 4);
-    }
   }
 }
 
@@ -161,7 +156,6 @@ header {
 }
 
 .pic-gallery {
-  @include clearfix;
 
   // Define the padding by passing the number of columns
   padding: gutter(12);
@@ -205,16 +199,9 @@ header {
     // inside, or split
     @include gutters(3em inside);
 
-    @include breakpoint((max-width 40em)){
-      @include span(12 of 12);
-    }
   }
   div:nth-child(2){
     @include span(last 6 of 12);
-
-    @include breakpoint((max-width 40em)){
-      @include span(12 of 12);
-    }
 
   }
 }

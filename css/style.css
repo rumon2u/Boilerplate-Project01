@@ -1,54 +1,191 @@
-/*
-Error: File to import not found or unreadable: breakpoint.
-       Load path: C:/Users/Creative Desk/Documents/GitHub/Boilerplate-Project01/sass
-        on line 3 of C:\Users\Creative Desk\Documents\GitHub\Boilerplate-Project01\sass\style.scss
+html {
+  font-size: 16px; }
 
-1: @import "partials/variables";
-2: @import "partials/layout";
-3: @import "breakpoint";
-4: @import "grids";
-5: 
-6: header {
-7:   height: 100px;
-8:   background: $blue;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-Backtrace:
-C:\Users\Creative Desk\Documents\GitHub\Boilerplate-Project01\sass\style.scss:3
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: breakpoint.\A        Load path: C:/Users/Creative Desk/Documents/GitHub/Boilerplate-Project01/sass\A         on line 3 of C:\Users\Creative Desk\Documents\GitHub\Boilerplate-Project01\sass\style.scss\A \A 1: @import \"partials/variables\";\A 2: @import \"partials/layout\";\A 3: @import \"breakpoint\";\A 4: @import \"grids\";\A 5: \A 6: header {\A 7:   height: 100px;\A 8:   background: $blue;"; }
+header {
+  height: 100px;
+  background: #0000FF;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.wrapper {
+  background: #FFFFFF;
+  margin: 0 auto;
+  max-width: 900px; }
+
+nav {
+  text-align: center; }
+  nav ul, nav li {
+    padding: 0; }
+  nav li {
+    background: #808080; }
+  nav a {
+    text-decoration: none;
+    color: #FFFFFF; }
+    nav a:hover {
+      color: #FFFF00; }
+
+.first-row {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.first-row .first {
+  background: #FFFF00;
+  height: 100%; }
+
+.first-row .second {
+  height: 100%; }
+
+.first-row .second div {
+  background: #FF7F00;
+  height: 100%; }
+
+.pic-gallery div {
+  background: #EE82EE;
+  height: 100%;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.content-bar div {
+  background: #00FF00;
+  height: 100%;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+footer {
+  height: 100px;
+  background: #0000FF;
+  color: #FFFFFF;
+  margin-top: 10px;
+  padding: 10px;
+  clear: both; }
+
+header {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  header .logo {
+    width: 7.3913%;
+    float: left;
+    margin-right: 4.34783%;
+    height: image-height("./images/nttlogo.png");
+    width: image-width("./images/nttlogo.png"); }
+  header h1 {
+    width: 13.04348%;
+    float: right;
+    margin-right: 0; }
+
+.nav {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+.wrapper {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 85, 102, 0.25), rgba(143, 121, 143, 0.25) 50%, transparent 50%);
+  background-size: 8.69565%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.nav-item {
+  width: 25%;
+  float: left; }
+
+.first-row {
+  clear: both; }
+  .first-row .first {
+    width: 30.43478%;
+    float: left;
+    margin-right: 4.34783%; }
+  .first-row .second {
+    width: 65.21739%;
+    float: right;
+    margin-right: 0; }
+    .first-row .second div:nth-child(1) {
+      width: 20%;
+      float: left;
+      margin-right: 6.66667%; }
+    .first-row .second div:nth-child(2) {
+      width: 20%;
+      float: left;
+      margin-right: 6.66667%; }
+    .first-row .second div:nth-child(3) {
+      width: 20%;
+      float: left;
+      margin-right: 6.66667%; }
+    .first-row .second div:nth-child(4) {
+      width: 20%;
+      float: right;
+      margin-right: 0; }
+    .first-row .second div:nth-child(5) {
+      width: 20%;
+      float: right;
+      margin-right: 0; }
+
+.pic-gallery {
+  padding: 4.34783%;
+  padding: 0 10px; }
+  .pic-gallery div {
+    width: 13.04348%;
+    float: left; }
+    .pic-gallery div:nth-child(6n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .pic-gallery div:nth-child(6n + 2) {
+      margin-left: 17.3913%;
+      margin-right: -100%;
+      clear: none; }
+    .pic-gallery div:nth-child(6n + 3) {
+      margin-left: 34.78261%;
+      margin-right: -100%;
+      clear: none; }
+    .pic-gallery div:nth-child(6n + 4) {
+      margin-left: 52.17391%;
+      margin-right: -100%;
+      clear: none; }
+    .pic-gallery div:nth-child(6n + 5) {
+      margin-left: 69.56522%;
+      margin-right: -100%;
+      clear: none; }
+    .pic-gallery div:nth-child(6n + 6) {
+      margin-left: 86.95652%;
+      margin-right: -100%;
+      clear: none; }
+  .pic-gallery div:nth-child(5) {
+    float: right;
+    margin-right: 0; }
+
+.content-bar {
+  padding: 0 10px;
+  margin-top: 4.34783%; }
+  .content-bar div:nth-child(1) {
+    width: 47.82609%;
+    float: left;
+    margin-right: 4.34783%;
+    padding-left: 1.5em;
+    padding-right: 1.5em; }
+  .content-bar div:nth-child(2) {
+    width: 47.82609%;
+    float: right;
+    margin-right: 0; }
+
+/*# sourceMappingURL=style.css.map */
